@@ -10,7 +10,6 @@
 int mul(int a, int b)
 
 {
-	int mul(int a, int b)
-		int calculate = (int a * int b);
+	int calculate = (a * b);
 	return (0);
 }
