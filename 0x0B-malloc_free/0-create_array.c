@@ -4,21 +4,24 @@
  * create_array - creates an array of chars.
  * @size: size of the array.
  * @c: storaged char
+ *
  * Return: pointer of an array of chars
  */
 char *create_array(unsigned int size, char c)
 {
-	int i;
-	char *ptr;
+	char *cr;
+	unsigned int i;
 
-	ptr = malloc((sizeof(char)) * size);
-	if (size == 0 || ptr == NULL)
-	{
-		return (NULL);
-	}
-	for (i = 0; i <= size; i++)
-	{
-		ptr[i] = c;
-	}
-	return (ptr);
+	if (size == 0)
+	return (NULL);
+
+	cr = malloc(sizeof(c) * size);
+
+	if (cr == NULL)
+	return (NULL);
+
+	for (i = 0; i < size; i++)
+	cr[i] = c;
+
+	return (cr);
 }
